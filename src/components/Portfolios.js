@@ -13,7 +13,7 @@ export class Portfolios extends React.Component {
 	componentDidMount() {
 		axios.get('http://dev-wp-rc-dev.pantheonsite.io/wp-json/wp/v2/portfolio')
 			.then(res => this.setState({
-				portfolio: res.data,
+				portfolios: res.data,
 				isLoaded: true
 			}))
 			.catch(err => console.log(err));
@@ -21,11 +21,11 @@ export class Portfolios extends React.Component {
 
 	render() {
 		// pulling data from the state
-		const { portfolio, isLoaded } = this.state;
+		const { portfolios, isLoaded } = this.state;
 		if(isLoaded) {
 			return (
 				<div className="">
-						<PortfolioItem key={portfolio.id} />
+						<PortfolioItem key={portfolios.id} />
 				</div>
 			);
 		}

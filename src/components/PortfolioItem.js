@@ -4,7 +4,7 @@ import axios from 'axios';
 
 export class PortfolioItem extends React.Component {
 	state = {
-		portfolios: [],
+		portfolio: [],
 		isLoaded: false
 	}
 
@@ -12,7 +12,7 @@ export class PortfolioItem extends React.Component {
 	componentDidMount() {
 		axios.get('http://dev-wp-rc-dev.pantheonsite.io/wp-json/wp/v2/portfolio')
 			.then(res => this.setState({
-				portfolios: res.data,
+				portfolio: res.data,
 				isLoaded: true
 			}))
 			.catch(err => console.log(err));
@@ -20,17 +20,17 @@ export class PortfolioItem extends React.Component {
 
 	render() {
 		// pulling data from the state
-		const { portfolios } = this.state;
+		const { portfolio } = this.state;
 		return (
 			<div className="p-8 grid grid-cols-2 gap-8">
-				{ portfolios.map(portfolio => (
+				{ portfolio.map(portfolio => (
 						<React.Fragment>
 							<div className="relative border-b-4 border-blue-400">
 								<div className="absolute w-5/6 bottom-0 bg-white p-8">
-									<h4 className="text-4xl font-bold mb-8 hover:text-blue-400">{portfolio.acf.company_name}</h4>
-									<Link to={{pathname: `${portfolio.acf.portfolio_url}` }} className="text-xl font-bold text-gray-500">{portfolio.acf.portfolio_link_text}</Link>
+									<h4 className="text-4xl font-bold mb-8 hover:text-blue-400">{portfolio.company_name}</h4>
+									<Link to={{pathname: `${portfolio.portfolio_url}` }} className="text-xl font-bold text-gray-500">{portfolio.portfolio_link_text}</Link>
 								</div>
-								<div className="image-card w-full min-h-20-rem pt-full bg-cover" style={{backgroundImage: `url(${portfolio.acf.portfolio_image})`}}>
+								<div className="image-card w-full min-h-20-rem pt-full bg-cover" style={{backgroundImage: `url(${portfolio.portfolio_image})`}}>
 								</div>
 							</div>
 						</React.Fragment>
