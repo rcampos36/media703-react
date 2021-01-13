@@ -20,7 +20,7 @@ export class PortfolioItem extends React.Component {
 
 	render() {
 		// pulling data from the state
-		const { portfolios, isLoaded } = this.state;
+		const { portfolios } = this.state;
 		return (
 			<div className="p-8 grid grid-cols-2 gap-8">
 				{ portfolios.map(portfolio => (
