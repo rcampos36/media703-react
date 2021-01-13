@@ -10,7 +10,7 @@ export class PortfolioItem extends React.Component {
 
 	// request for scf fields
 	componentDidMount() {
-		axios.get('http://react-wp-backend.test/wp-json/wp/v2/portfolio')
+		axios.get('http://dev-wp-rc-dev.pantheonsite.io/wp-json/wp/v2/portfolio')
 			.then(res => this.setState({
 				portfolios: res.data,
 				isLoaded: true
@@ -27,8 +27,8 @@ export class PortfolioItem extends React.Component {
 						<React.Fragment>
 							<div className="relative border-b-4 border-blue-400">
 								<div className="absolute w-5/6 bottom-0 bg-white p-8">
-									<h4 className="text-4xl font-bold mb-8 hover:text-blue-400">{portfolio.acf.portfolio_title}</h4>
-									<Link to={{pathname: `${portfolio.acf.portfolio_link}` }} className="text-xl font-bold text-gray-500">{portfolio.acf.portfolio_link_text}</Link>
+									<h4 className="text-4xl font-bold mb-8 hover:text-blue-400">{portfolio.acf.company_name}</h4>
+									<Link to={{pathname: `${portfolio.acf.portfolio_url}` }} className="text-xl font-bold text-gray-500">{portfolio.acf.portfolio_link_text}</Link>
 								</div>
 								<div className="image-card w-full min-h-20-rem pt-full bg-cover" style={{backgroundImage: `url(${portfolio.acf.portfolio_image})`}}>
 								</div>
