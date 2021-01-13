@@ -10,7 +10,7 @@ export class PortfolioItem extends React.Component {
 
 	// request for scf fields
 	componentDidMount() {
-		axios.get('http://dev-wp-rc-dev.pantheonsite.io/wp-json/wp/v2/portfolio')
+		axios.get('https://dev-wp-rc-dev.pantheonsite.io/wp-json/wp/v2/portfolio')
 			.then(res => this.setState({
 				portfolio: res.data,
 				isLoaded: true

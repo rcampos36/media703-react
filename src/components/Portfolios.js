@@ -11,7 +11,7 @@ export class Portfolios extends React.Component {
 
 	//this is where we make the initial request
 	componentDidMount() {
-		axios.get('http://dev-wp-rc-dev.pantheonsite.io/wp-json/wp/v2/portfolio')
+		axios.get('https://dev-wp-rc-dev.pantheonsite.io/wp-json/wp/v2/portfolio')
 			.then(res => this.setState({
 				portfolios: res.data,
 				isLoaded: true
