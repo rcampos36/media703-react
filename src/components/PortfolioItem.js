@@ -27,10 +27,10 @@ export class PortfolioItem extends React.Component {
 						<React.Fragment>
 							<div className="relative border-b-4 border-blue-400">
 								<div className="absolute w-5/6 bottom-0 bg-white p-8">
-									<h4 className="text-4xl font-bold mb-8 hover:text-blue-400">{portfolio.company_name}</h4>
-									<Link to={{pathname: `${portfolio.portfolio_url}` }} className="text-xl font-bold text-gray-500">{portfolio.portfolio_link_text}</Link>
+									<h4 className="text-4xl font-bold mb-8 hover:text-blue-400">{portfolio.acf.work_name}</h4>
+									<Link to={{pathname: `${portfolio.acf.work_url}` }} className="text-xl font-bold text-gray-500">{portfolio.acf.work_link_text}</Link>
 								</div>
-								<div className="image-card w-full min-h-20-rem pt-full bg-cover" style={{backgroundImage: `url(${portfolio.portfolio_image})`}}>
+								<div className="image-card w-full min-h-20-rem pt-full bg-cover" style={{backgroundImage: `url(${portfolio.acf.work_image})`}}>
 								</div>
 							</div>
 						</React.Fragment>
