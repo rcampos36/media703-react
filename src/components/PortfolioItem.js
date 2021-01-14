@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
+import * as BsIcons from "react-icons/bs";
 
 export class PortfolioItem extends React.Component {
 	state = {
@@ -28,7 +29,7 @@ export class PortfolioItem extends React.Component {
 							<div className="relative border-b-4 border-blue-400">
 								<div className="absolute w-5/6 bottom-0 bg-white p-8">
 									<h4 className="text-4xl font-bold mb-8 hover:text-blue-400">{portfolio.acf.work_name}</h4>
-									<Link to={{pathname: `${portfolio.acf.work_url}` }} className="text-xl font-bold text-gray-500">{portfolio.acf.work_link_text}</Link>
+									<Link to={{pathname: `${portfolio.acf.work_url}` }} className="text-xl font-bold text-gray-500">{portfolio.acf.work_link_text}<BsIcons.BsArrowRight /></Link>
 								</div>
 								<div className="image-card w-full min-h-20-rem pt-full bg-cover" style={{backgroundImage: `url(${portfolio.acf.work_image})`}}>
 								</div>
