@@ -8,14 +8,14 @@ import Navbar from './components/Navbar';
 function App() {
   return (
   	<Router>
-	    <div className="App">
-	    	<div className="">
-		    	<Navbar />
+	    <div className="App flex">
+	    	<div className="w-full relative">
 		    	<Switch>
 		      	<Route path='/' exact component={Portfolios} />
 		      	<Route path='/resume' component={Resume} />
 		      </Switch>
 	      </div>
+	      <Navbar />
 	    </div>
     </Router>
   );

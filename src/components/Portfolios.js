@@ -24,7 +24,7 @@ export class Portfolios extends React.Component {
 		const { portfolios, isLoaded } = this.state;
 		if(isLoaded) {
 			return (
-				<div className="">
+				<div className="w-full">
 						<PortfolioItem key={portfolios.id} />
 				</div>
 			);

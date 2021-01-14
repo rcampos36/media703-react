@@ -4,3 +4,13 @@
   padding-top: 100%;
   min-height: 20rem;
 }
+
+.is-active:before {
+	content:"";
+	position: absolute;
+  width: 10px;
+  height: 20px;
+  background-color: white;
+  left: -10px;
+  top: 10px;
+}
