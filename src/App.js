@@ -9,7 +9,7 @@ function App() {
   return (
   	<Router>
 	    <div className="App flex">
-	    	<div className="w-full relative">
+	    	<div className="content relative">
 		    	<Switch>
 		      	<Route path='/' exact component={Portfolios} />
 		      	<Route path='/resume' component={Resume} />

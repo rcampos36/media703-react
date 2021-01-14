@@ -23,7 +23,7 @@ export class PortfolioItem extends React.Component {
 		// pulling data from the state
 		const { portfolios } = this.state;
 		return (
-			<div className="p-8 grid grid-cols-2 gap-8">
+			<div className="p-8 grid grid-cols-2 gap-10">
 				{ portfolios.map(portfolio => (
 						<React.Fragment>
 							<div className="relative border-b-4 border-blue-400">

@@ -14,3 +14,12 @@
   left: -10px;
   top: 10px;
 }
+
+.nav-menu {
+	width: 18%;
+	max-width: 18%;
+}
+
+.content {
+	width: 82%;
+}
