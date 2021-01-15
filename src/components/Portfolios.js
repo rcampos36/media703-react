@@ -1,6 +1,7 @@
 import React from 'react';
 import PortfolioItem from './PortfolioItem'
 import axios from 'axios';
+import Header from './Header';
 
 export class Portfolios extends React.Component {
 	// this sets the state
@@ -24,8 +25,9 @@ export class Portfolios extends React.Component {
 		const { portfolios, isLoaded } = this.state;
 		if(isLoaded) {
 			return (
-				<div className="w-4/6 mx-auto">
-						<PortfolioItem key={portfolios.id} />
+				<div className="w-9/12 mx-auto">
+					<Header />
+					<PortfolioItem key={portfolios.id} />
 				</div>
 			);
 		}

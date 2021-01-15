@@ -9,11 +9,13 @@ function App() {
   return (
   	<Router>
 	    <div className="App flex">
-	    	<div className="content relative">
-		    	<Switch>
-		      	<Route path='/' exact component={Portfolios} />
-		      	<Route path='/resume' component={Resume} />
-		      </Switch>
+	    	<div className="content relative w-full">
+	    		<div className="w-9/12 ml-auto mr-20">
+			    	<Switch>
+			      	<Route path='/' exact component={Portfolios} />
+			      	<Route path='/resume' component={Resume} />
+			      </Switch>
+		      </div>
 	      </div>
 	      <Navbar />
 	    </div>

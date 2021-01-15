@@ -2,7 +2,7 @@ import React from 'react'
 
 function Resume() {
 	return (
-		<div className="resume">
+		<div className="resume w-9/12 ml-auto">
 
 			<h1>Resume</h1>
 			

@@ -8,7 +8,7 @@ function Navbar() {
 
 	return (
 		<React.Fragment>
-			<nav className='nav-menu bg- h-screen flex justify-center pt-5 fixed top-0 right-0 transition duration-700 z-10'>
+			<nav className='nav-menu bg- h-screen flex justify-center pt-5 fixed top-0 left-0 transition duration-700 z-10'>
 				<ul className='nav-menu-items w-full flex flex-col px-2 py-12'>
 					{SidebarData.map((item, index) => {
 						return (
