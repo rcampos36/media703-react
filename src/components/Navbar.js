@@ -16,7 +16,7 @@ function Navbar() {
 						return (
 							<li key={index} className='flex justify-center list-none h-10 mb-4'>
 								<NavLink exact={true} activeClassName='is-active' className="flex no-underline text-grey-600 text-2xl w-full h-full items-center justify-start py-2 px-2 relative" to={item.path}>
-									<span className="uppercase leading-4">{item.title}</span>
+									<span className="uppercase leading-4 antialiased">{item.title}</span>
 								</NavLink>
 							</li>
 						);

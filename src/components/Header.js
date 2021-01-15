@@ -5,7 +5,7 @@ export class Header extends React.Component {
 	render() {
 		return (
 			<div className="">
-				<div class="logo-main text-5xl flex"><span className="border-r border-gray-300 mr-2 pr-2"><RiIcons.RiStackLine /></span>703</div>
+				<div class="logo-main text-5xl flex antialiased"><span className="border-r border-gray-300 mr-2 pr-2"><RiIcons.RiStackLine /></span>703</div>
 			</div>
 		)
 	}
