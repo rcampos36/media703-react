@@ -8,9 +8,9 @@ import Navbar from './components/Navbar';
 function App() {
   return (
   	<Router>
-	    <div className="App flex">
-	    	<div className="content relative w-full">
-	    		<div className="w-9/12 ml-auto mr-20">
+	    <div className="App flex flex-row-reverse">
+	    	<div className="content relative w-full flex">
+	    		<div className="w-full">
 			    	<Switch>
 			      	<Route path='/' exact component={Portfolios} />
 			      	<Route path='/resume' component={Resume} />
