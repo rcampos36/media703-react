@@ -42,3 +42,29 @@ h1 {
 .content {
 	padding-left: 340px;
 }
+
+.timeline:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: -20px;
+  left: 50%;
+  width: 1px;
+  background-color: #fff;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.education-wrapper:nth-child(odd) {
+	left: 50%;
+}
+
+.education-wrapper:nth-child(even) {
+	text-align: right;
+	padding-right: 40px;
+}
+
+.experience {
+	background-color: #56aec6;
+}

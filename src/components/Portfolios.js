@@ -25,7 +25,7 @@ export class Portfolios extends React.Component {
 		if(isLoaded) {
 			return (
 				<div className="w-full px-20 py-12">
-					<h1 className="pl-8 uppercase text-3xl antialiased">My Work</h1>
+					<h1 className="mb-12 text-center uppercase text-3xl antialiased">My Work</h1>
 					<PortfolioItem key={portfolios.id} />
 				</div>
 			);
