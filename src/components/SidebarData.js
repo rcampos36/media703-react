@@ -9,6 +9,12 @@ export const SidebarData = [
 		cName: 'nav-text'
 	},
 	{
+		title: 'About Me',
+		path: '/about',
+		icon: <AiIcons.AiOutlinePaperClip />,
+		cName: 'nav-text'
+	},
+	{
 		title: 'Resume',
 		path: '/resume',
 		icon: <AiIcons.AiOutlinePaperClip />,
