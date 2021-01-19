@@ -23,7 +23,7 @@ export class AboutMeItem extends React.Component {
 		// pulling data from the state
 		const { about } = this.state;
 		return (
-			<div className="p-0 relative my-0 mx auto flex">
+			<div className="p-0 relative my-0 mb-24 flex">
 				{ about.map(aboutme => (
 						<React.Fragment>
 							<div className="w-1/2 min-h-full" style={{backgroundImage: `url(${aboutme.acf.image})`}}></div>
